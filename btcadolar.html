@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tabla</h1>
+    <script>
+        var cantidad=0;
+        var x=1000;
+
+cantidad=parseFloat(prompt("ingrese cantidad de dolares"))
+      while(x<1000||x>100000)
+      {
+        cantidad=parseFloat(prompt("ingrese cantidad de dolares"))
+      }
+      document.write("____________________________________________________<br>")
+      document.write("Dolares___________________________Btc________________________Eth<br>")
+      document.write("____________________________________________________<br>")
+      while(x<=cantidad)
+      {
+
+        document.write(x.toFixed(2)+"__________________"+x/57810+"_____________________"+x/3062+"<br>")
+        document.write("<br><br>");
+x++;
+      }
+
+document.write("____________________________________________________<br>")
+
+
+    </script>
+</body>
+</html>

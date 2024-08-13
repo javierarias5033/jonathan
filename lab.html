@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio</title>
+</head>
+<body>
+    <script>
+     var totalAlumnos=500;
+
+    
+let tarjetasporalumno ,nombre,alumno, seccion, fecha,cantidad;
+Array(totalAlumnos).fill(0);
+let costototalporalumno= new
+Array(totalAlumnos).fill(0);
+
+nombre=(prompt("ingrese un nombre y apellido"))
+document.write("su nombre y apellido es:"+nombre+"<br>");
+seccion=(prompt("ingrese su seccion:"))
+document.write("pertenece a la seccion:"+seccion+"<br>")
+fecha=(prompt("ingrese la fecha"))
+document.write("la fehcha es:"+fecha)
+let cantidadTarjetas=prompt("ingrese la cantidad de tarjetas que desea comprar ");
+
+cantidadTarjetas=parseInt(cantidadTarjetas);
+
+if(cantidadTarjetas && cantidadTarjetas>0 && cantidadTarjetas<=20){
+    console.log("el usuario desea comprar"+cantidadTarjetas+"tarjetas");
+
+}else{
+    console.log("ingrese una cantidad valida de tarjetas (1/20)")
+}
+
+function venderTarjetas(alumno, cantidad){
+    if (cantidad<=20){
+tarjetasporalumno[alumno]+= cantidad;
+costototalporalumno[alumno]+= cantidad*3;
+    }else {
+        console.log("la cantidad maxima de tarjetas por alumno es de 20");
+
+    }
+  
+}
+venderTarjetas(1,5);
+
+console.log("cantidad de tarjetas vendidas por alumno 1", tarjetasporalumno[1]);
+console.log("costo total por tarjetas vendidas por alumno 1:", costototalporalumno[1])
+
+    
+
+
+    </script>
+</body>
+</html>

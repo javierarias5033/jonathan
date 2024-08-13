@@ -1,0 +1,53 @@
+body{
+ background-color: black;
+ color:white;
+ display: flex ;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ margin: 0;
+}
+
+.for-container{
+    background-color: #333;
+    padding: 20xp;
+    border-radius: 8px;
+    width: 300xp;
+    box-shadow: 0 0 10px rgb(0, 0, 0.5);
+
+}
+
+.for-container h2{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.for-container label{
+display: block;
+margin-bottom: 10px;
+
+}
+.for-container input[type="text"],
+.for-container input[type="number"]{
+    width: calc(100%-20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #2222;
+    color: white;
+
+}
+.for-container input[type="submit "]{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+
+}
+.for-container input[type="submit"]:hover{
+    background-color: #45a049;
+}

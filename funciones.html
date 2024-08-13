@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="funciones.js"></script>
+    <script src="funciones1.html"></script>
+</head>
+<body>
+    <h1>FUNCIONES</h1>
+    <script>
+        var op;
+        op=parseInt(prompt("seleccione una opcion \n1-frase \n2-semana  \n3-ascendente \n4-descendente \n5-tabla"));
+        while(op > 5 || opc < 1){
+            op=parseInt(prompt(" una opcion valida \n1-frase \n2-semana  \n3-ascendente \n4-descendente \n5-tabla"));
+
+        };
+        switch(op){
+            case 1:{
+                document.write("imprimiendo la frase <br>")
+      frase();
+      break;
+
+            }
+            case 2: {
+                
+document.write("Imprimiendo dias de la semana <br>")
+semanita();
+break;
+            }
+            case 3: {
+                document.write("Imprimiendo numeros ascendentes"+"<br>")
+                serie();
+                break;
+            }
+            case 4: {
+                
+document.write("Imprimiendo  forma descendente"+"<br>")
+serie1();
+break;
+            }
+    case 5: {
+        document.write("imprimiendo tabla de multiplicar")
+        tablita();
+        break;
+    }
+    default:{
+document.write("no hay mas opciones")
+    }
+    
+        }
+   
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
